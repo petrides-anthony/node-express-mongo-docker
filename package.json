@@ -1,0 +1,15 @@
+{
+  "name": "nodemongo",
+  "version": "1.0.0",
+  "description": "Dockerising node/express/mongo app",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start-stack": "docker-compose -f docker-compose.yml up",
+    "kill-stack": "docker-compose -f docker-compose.yml down"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongojs": "^3.1.0"
+  }
+}
